@@ -13,7 +13,7 @@ pip3 install pymongo
 pip3 install -r requirements.txt
 ```
 
-after, config host and db name
+after, config host and db name on script
 
 ``` bash
 URL = 'mongodb://localhost:27017/'
@@ -23,4 +23,3 @@ DBNAME = 'maestro'
 ``` bash
 python3 migrate.oy
 ```
-151.101.4.133
