@@ -1,5 +1,5 @@
 
-## Script migrate db version 0.4 to 0.5
+## Maestro Server - Script migrate db version 0.4 to 0.5
 
 Test with python3 but works with python2
 
