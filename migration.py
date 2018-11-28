@@ -29,7 +29,7 @@ for app in apps.find({ 'servers': { '$exists': True} }):
             tmp_app = {k: napp.get(k, None) for k in ('_id', 'name', 'family')}
 
             for server in app['servers']:
-                result = db.applications.update_one({'_id': server}, {'$set': {'applications': tmp_app}})
+                result = db.servers.update_one({'_id': server}, {'$set': {'applications': [tmp_app]}})
                 print('server -> ', server, result.raw_result)
                 print(server)
 
